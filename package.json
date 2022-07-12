@@ -1,0 +1,26 @@
+{
+  "private": true,
+  "scripts": {
+    "postinstall": "husky install",
+    "prettier": "prettier --ignore-path .gitignore \"**/*.+(js|jsx|ts|tsx|json|css)\"",
+    "format": "yarn prettier --write",
+    "check-format": "yarn prettier --list-different",
+    "build": "yarn workspaces foreach -pt run build"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "husky": "^8.0.0",
+    "lint-staged": "^13.0.2",
+    "prettier": "^2.6.2",
+    "typescript": "^4.6.4"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx,css,json}": [
+      "yarn format",
+      "git add"
+    ]
+  },
+  "packageManager": "yarn@3.2.0"
+}

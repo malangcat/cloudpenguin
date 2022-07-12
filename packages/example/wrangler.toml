@@ -1,0 +1,10 @@
+name = "cloudpenguin-test"
+main = "dist/index.js"
+compatibility_date = "2022-05-19"
+
+[build]
+command = "yarn build"
+
+[dev]
+port = 8787
+ip = "127.0.0.1"

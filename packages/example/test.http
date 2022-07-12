@@ -1,0 +1,18 @@
+###
+GET http://localhost:8787/items
+Content-Type: application/json
+
+###
+POST http://localhost:8787/items
+Content-Type: application/json
+
+{}
+
+###
+POST http://localhost:8787/items
+Content-Type: application/json
+
+{
+  "name": "Penguin",
+  "amount": 1
+}

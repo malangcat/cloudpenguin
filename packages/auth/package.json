@@ -1,0 +1,12 @@
+{
+  "name": "@cloudpenguin/auth",
+  "version": "0.0.1",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^3.10.0",
+    "typescript": "^4.6.4"
+  },
+  "dependencies": {
+    "@cloudpenguin/core": "workspace:^",
+    "jose": "^4.8.1"
+  }
+}
